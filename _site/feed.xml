@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Aug 2016 12:41:31 -0700</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2016 12:41:31 -0700</lastBuildDate>
+    <pubDate>Sun, 07 Aug 2016 11:14:18 -0700</pubDate>
+    <lastBuildDate>Sun, 07 Aug 2016 11:14:18 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -18,43 +18,298 @@ and decided to switch fields from materials science research
 intelligence). I was captivated by the broad impact that areas like
 AI could have, the entire world was (and still is) getting on mobile
 phones, and I felt like my work would leave a larger dent. This was a
-huge change for me - I’m an EE PhD and essentially went from hardware
-to software search - and involved many learning curves.&lt;/p&gt;
+huge challenge - I’m an electrical engineering PhD student and
+essentially went from hardware to software search - which involved many learning curves.&lt;/p&gt;
 
 &lt;p&gt;I’m compiling below a condensed set of basic skills that helped me in my
-transition, in the hope that those of you that are interested in such as
+transition, in the hope that those of you that are interested in such a
 field switch might find it useful. This is very much a work in progress
-and I welcome all comments and helpful suggestions!&lt;/p&gt;
+and I welcome all comments and helpful suggestions! I would love to
+continue to evolve this post depending on people’s questions.&lt;/p&gt;
 
-&lt;p&gt;General Topics:&lt;/p&gt;
+&lt;h1 id=&quot;general-topics&quot;&gt;General Topics:&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Useful hardware
-    &lt;ul&gt;
-      &lt;li&gt;mixed&lt;/li&gt;
-      &lt;li&gt;mixed&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Working in a command-line environment&lt;/li&gt;
+  &lt;li&gt;What hardware to use&lt;/li&gt;
   &lt;li&gt;Working with Linux and Unix-based operating systems&lt;/li&gt;
-  &lt;li&gt;Useful frameworks and codebases to learn&lt;/li&gt;
-  &lt;li&gt;Basic knowledge of algorithms&lt;/li&gt;
-  &lt;li&gt;Advanced Math Topics&lt;/li&gt;
+  &lt;li&gt;Command-line environments&lt;/li&gt;
+  &lt;li&gt;Text Editors&lt;/li&gt;
+  &lt;li&gt;Programming Languages for machine learning research&lt;/li&gt;
+  &lt;li&gt;Useful frameworks and codebases&lt;/li&gt;
+  &lt;li&gt;Basic knowledge of computer science&lt;/li&gt;
+  &lt;li&gt;Advanced Topics in Machine Learning and AI&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h1 id=&quot;what-hardware-to-use&quot;&gt;1. What hardware to use&lt;/h1&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Desktops&lt;/strong&gt;.
+If you’re a researcher you’ll need a solid linux box complete with at least one machine-learning grade NVIDIA-GPU. I recommend System76 - their desktops are custom built, high-quality, and relatively cheap compared to larger companies. I use the Leopard Workstation. The Silverback Workstation is great too.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Laptops&lt;/strong&gt;.
+Here, I actually recommend a MacBook Pro. While most of your develop and research will be on the desktop, its great to be able to ssh in remotely (ssh == secure shell: it lets you remotely enter a computer or server to get work done) and go work from the beach. Additionally, having a Mac is useful if you ever decide to build iOS apps.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GPUs&lt;/strong&gt;.
+This is where your machine learning and deep learning code will be trained and run. NVIDIA GPUs are essentially miniature supercomputers - they can have upwards of 10,000 cuda-cores, which serve to parallelize the massive computational demands of training a deep learning algorithm. When researchers figured out how to train a neural network on a GPU, train time went from months to days, and the deep learning explosion of 2012 occurred when a GPU-trained neural network won the ImageNet challenge.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;working-with-linux-and-unix-based-operating-systems&quot;&gt;2. Working with Linux and Unix-based operating systems&lt;/h1&gt;
+
+&lt;p&gt;Linux is an amazing operating system that makes so many things easier for developers than Windows or Mac. Mac has a Unix kernel (Linux is Linus Pauling’s operating system built around a unix kernel) so it is still useful for development, but doesn’t have the stream-line workflow of Linux. Ubuntu is the most popular linux OS, its free, and I highly recommend it, as it is very user friendly. Also, Linux OS are free (minus Redhat’s enterprise distribution), and linux machines are cheaper than Windows and Mac. The catch is there’s a learning curve to working with Linux, but once you’re past it you’ll love linux. I tolerate my Mac only because it has a Unix kernel.&lt;/p&gt;
+
+&lt;p&gt;Get acquainted with StackOverflow, as it’ll be your best friend when debugging why things aren’t working. If anything throws an error, either while installing a program or running one, just paste the error into google and look for the stack overflow post - I bet you someone has previously had the same issue.&lt;/p&gt;
+
+&lt;p&gt;Learn to use apt-get to install packages. Read up on package repositories and how installation works. Learn about makefiles and make, as you might be compiling your own code.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;command-line-environments&quot;&gt;3. Command-line environments&lt;/h1&gt;
+
+&lt;p&gt;Become familiar with navigating the filesystem: from moving around directories, to creating them, etc.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# change directory&lt;/span&gt;
+ls    &lt;span class=&quot;c&quot;&gt;# list what’s in a directory&lt;/span&gt;
+mv    &lt;span class=&quot;c&quot;&gt;# rename or move a file&lt;/span&gt;
+cp    &lt;span class=&quot;c&quot;&gt;# copy a file&lt;/span&gt;
+man   &lt;span class=&quot;c&quot;&gt;# show the manual for a command&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here are the top 20 commands I use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     1    1138  11.3811%   vim
+     2    1096  10.9611%   l
+     3    955   9.55096%   cd
+     4    941   9.41094%   cat
+     5    701   7.0107%    mv
+     6    581   5.81058%   cp
+     7    518   5.18052%   rm
+     8    407   4.07041%   git
+     9    367   3.67037%   mkdir
+    10    320   3.20032%   grep
+    11    263   2.63026%   find
+    12    248   2.48025%   python
+    13    177   1.77018%   ls
+    14    155   1.55016%   head
+    15    139   1.39014%   screen
+    16    102   1.0201%    diff
+    17    99    0.990099%  sudo
+    18    85    0.850085%  nautilus
+    19    75    0.750075%  py
+    20    60    0.60006%   which
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To see yours, type:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;history&lt;/span&gt; | awk &lt;span class=&quot;s1&quot;&gt;&#39;{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] &quot; &quot; CMD[a]/count*100 &quot;% &quot; a;}&#39;&lt;/span&gt; | grep -v &lt;span class=&quot;s2&quot;&gt;&quot;./&quot;&lt;/span&gt; | column -c3 -s &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt; -t | sort -nr | nl |  head -n20
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of particular usefulness I think are: &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sed&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;py&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;: used to search files for particular strings (sequences of characters)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sed&lt;/code&gt;: a utility that parses and transforms text&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt;: a utility that helps you find files and directories from partial strings&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;py&lt;/code&gt;: a utility that lets you evaluate python commands directly on the command line. Shout out to &lt;a href=&quot;https://github.com/Russell91/pythonpy&quot;&gt;Russell Stewart&lt;/a&gt; for putting this together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;text-editors&quot;&gt;4. Text Editors&lt;/h1&gt;
+
+&lt;p&gt;You’ll be doing a lot of text-file editing - everything from writing source code to blogs ( 😃 ) includes text files. Notable editors are vim, emacs, nano, and sublime. Vim, emacs, and nano are all command-line editors that open up directly in the terminal:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/assets/vim.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
+vim text editor
+&lt;br /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Sublime, on the other hand, is a rich-text editor that opens external to
+the command line.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/assets/sublime.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
+sublime text editor
+&lt;br /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Which you choose is largely a question of personal taste. Personally I
+find vim to be the best one, as I find that the keyboard shortcuts it
+uses are more intuitive and easier to navigate than nano or emacs, and
+the fact that you don’t need the mouse at all makes it superior to
+sublime. Additionally, the convenience of navigating the filesystem and
+opening up text files all from a terminal makes it easier to use than
+sublime.&lt;/p&gt;
+
+&lt;p&gt;Regardless, be sure to set up a configuration for it (to get the pretty
+color coding you see in the pictures above). For vim, I use the
+&lt;a href=&quot;https://github.com/carlhuda/janus&quot;&gt;janus&lt;/a&gt; distribution.
+It has a plethora of wonderful plugins that make it simpler to navigate.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple vim tutorials to consider (there is a learning curve):
+&lt;br /&gt;
+&lt;a href=&quot;/http://www.openvim.com/&quot;&gt;http://www.openvim.com&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;https://danielmiessler.com/study/vim/&quot;&gt;https://danielmiessler.com/study/vim/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;programming-languages-for-machine-learning-research&quot;&gt;5. Programming Languages for machine learning research&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;
+Python is the most popular language for machine learning and AI research. It has a number of valuable modules for numerical operations, including numpy (Numerical Python), and scipy (Scientific Python) that allow you to work very efficiently with large matrices. You can usually do in a single line of python what would otherwise require a long function in other languages. I’m a fan of the anaconda distribution of python, as it includes almost everything you’d need.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MATLAB&lt;/strong&gt;
+MATLAB is a decent language to use for rapid prototyping and analysis. It has many useful built-in packages for numerical processing. The downside is that MATLAB isn’t a real programming language, its very memory intensive, and you have to pay for it (though academic / student licenses are pretty cheap).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C++&lt;/strong&gt;
+C++ is widely used in industry for production code. Its very efficient and flexible, and great for large-scale systems. Python packages like numpy often create (under the hood) bindings for fast C++ functions. While C++ is a bit cumbersome for the rapid and hacky prototyping of research, its great for translating that code to enterprise-grade quality.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bash Scripting&lt;/strong&gt;
+Bash scripting is useful for running complex instructions with your filesystem. Learn to use this as it can save you a lot time manipulating files/folders/etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt;
+In my opinion, every good AI researcher, back-end developer, and algorithms specialist should learn at least a bit of HTML. In AI research we often use crowdsourcing tools like Amazon Mechanical Turk to parse our datasets, and you have to build web GUIs for this.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;useful-frameworks-and-codebases&quot;&gt;6. Useful frameworks and codebases&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt;.
+Learn to develop code in a
+&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;&gt;git&lt;/a&gt;
+workflow and integrate it with
+&lt;a href=&quot;github.com&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir my-first-git-codebase
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-first-git-codebase
+git init
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; “Explanation goes here” &amp;gt; Readme.md
+git add .
+git commit -am “Initial Commit&lt;span class=&quot;s2&quot;&gt;&quot;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And voila. Your first git repository is initialized. You can then push
+code to github for remote storage: &lt;code class=&quot;highlighter-rouge&quot;&gt;git push -u origin master&lt;/code&gt;.
+Another reason I like the oh-my-zsh config is because any time you’re
+in a git repo it’ll display the branch that you’re on (in this case,
+master):&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/assets/git.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
+git setup with branch displayed at command prompt.
+&lt;br /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Virtual Environments&lt;/strong&gt;.
+For python, its very useful to create virtual environments where you can
+install dependencies that don’t conflict with system-wide installations,
+and install these dependencies with versions specified all from a
+requirements.txt file:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virtualenv .env
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .env/bin/activate
+pip install -r requirements.txt
+&lt;span class=&quot;c&quot;&gt;# [write some code]&lt;/span&gt;
+deactivate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You may find yourself writing code that depends on prior versions of
+python packages, or going back to code that you wrote some time ago.
+Virtual environments preserve dependency versions to prevent updates
+from preventing your code from working. For instance, in python 2 print
+statements look like:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;python ‘Hello World!&#39;&lt;/code&gt;
+and in python 3
+&lt;code class=&quot;highlighter-rouge&quot;&gt;python(‘Hello World!’)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Deep Learning Frameworks&lt;/strong&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tensorflow.org&quot;&gt;Tensorflow (Google)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.torch.ch&quot;&gt;Torch (Facebook)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NervanaSystems/neon&quot;&gt;Neon (Nirvana)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe (UC Berkeley)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many good machine learning and deep learning
+frameworks. I’ve worked closely both with Caffe and Tensorflow. Each
+has their pros and cons. Tensorflow - released
+earlier this year - is my personal favorite. Its a very flexible
+framework capable of doing much more than just deep learning, and it
+translated very easily from research code to production. Essentially the
+same code that runs on a GPU will run on a CPU, a mobile device, in the
+cloud, etc. The Google Cloud setup includes a tensorflow interface. The
+website includes an extensive API and documentation, including simple
+tutorials on how to put tensorflow code into scalable serving
+environments in the cloud. Its written in python, and I expect it to
+have the best support - both from Google and the developer community -
+moving forth.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flask&lt;/strong&gt;.
+When it comes to web dev and HTML, its hard to beat flask. Its a python
+micro-framework for web development that includes wrappers around SQL
+databases. Its super easy to set up and work with. I’ve used it for
+Amazon Mechanical Turk setups, for web interfaces to test algorithms
+against medical practitioners, and to deploy object recognition models
+on web sites.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;basic-knowledge-of-computer-science&quot;&gt;7. Basic knowledge of computer science&lt;/h1&gt;
+
+&lt;p&gt;There’s a reason universities offer computer science as its own major -
+there are many interesting topics out there and the field has been
+around for decades. Below are a few good courses offered by Stanford,
+all of which have course notes online. Take a look at the topics offered
+in each - typically homework assignments and examples are offered for
+them.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://web.stanford.edu/class/cs106a/&quot;&gt;CS 106A&lt;/a&gt;: Programming Methodology (Java)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://web.stanford.edu/class/cs106b/&quot;&gt;CS 106B&lt;/a&gt;: Programming Abstractions&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/class/cs110/spring-2016/&quot;&gt;CS 110&lt;/a&gt;: Principles of Computer Systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;advanced-topics-in-artificial-intelligence&quot;&gt;8. Advanced topics in artificial intelligence&lt;/h1&gt;
+
+&lt;p&gt;Here are some advanced foundational courses - not for the faint of
+heart. Most course notes are offered for free, online, by Stanford,
+including homework assignments.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs229.stanford.edu/&quot;&gt;CS 229&lt;/a&gt;: Machine Learning&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs231n.stanford.edu/&quot;&gt;CS 231n&lt;/a&gt;: Convolutional Neural Networks&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs224d.stanford.edu/&quot;&gt;CS 224d&lt;/a&gt;: Deep Learning for Natural Language Processing&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/class/cs221/&quot;&gt;CS 221&lt;/a&gt;: Artificial Intelligence&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stanford.edu/class/ee364a/&quot;&gt;EE 364a&lt;/a&gt;: Convex Optimization&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs.stanford.edu/~ermon/cs228/index.html&quot;&gt;CS 228&lt;/a&gt;: Probabilistic Graphical Models&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs229.stanford.edu/section/cs229-linalg.pdf&quot;&gt;Linear Algebra Review&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Vector Calculus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;# 9. Further resources&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prominent Researchers and Research Groups&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This list is by no means exhaustive - I am happy to add folks in here
+if anyone has requests - this simply serves for me as a ‘watch list’
+where I look for new and interesting papers.&lt;/p&gt;
+
+&lt;p&gt;Yann Lecun
+ Geoff Hinton
+ Yoshua Bengio&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 05 Aug 2016 00:00:00 -0700</pubDate>
