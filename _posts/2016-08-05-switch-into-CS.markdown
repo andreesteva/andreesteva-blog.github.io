@@ -17,8 +17,10 @@ essentially went from hardware to software search - which involved many learning
 I'm compiling below a condensed set of basic skills that helped me in my
 transition, in the hope that those of you that are interested in such a
 field switch might find it useful. This is very much a work in progress
-and I welcome all comments and helpful suggestions! I would love to
-continue to evolve this post depending on people's questions.
+and I welcome all comments and helpful suggestions! This post is
+tailored slightly towards those interested in machine learning and
+artificial intelligence, but may be useful for those thinking to other
+areas of CS.
 
 # General Topics:
 
@@ -40,18 +42,18 @@ continue to evolve this post depending on people's questions.
 If you’re a researcher you’ll need a solid linux box complete with at least one machine-learning grade NVIDIA-GPU. I recommend System76 - their desktops are custom built, high-quality, and relatively cheap compared to larger companies. I use the Leopard Workstation. The Silverback Workstation is great too.
 
 <strong>Laptops</strong>.
-Here, I actually recommend a MacBook Pro. While most of your develop and research will be on the desktop, its great to be able to ssh in remotely (ssh == secure shell: it lets you remotely enter a computer or server to get work done) and go work from the beach. Additionally, having a Mac is useful if you ever decide to build iOS apps.
+Use a MacBook Pro or a Linux laptop. Avoid Windows at all costs. While most of your develop and research will be on the desktop, its great to be able to ssh in remotely (ssh == secure shell: it lets you remotely enter a computer or server to get work done) and go work from the beach. Additionally, having a Mac is useful if you ever decide to build iOS apps.
 
 <strong>GPUs</strong>.
-This is where your machine learning and deep learning code will be trained and run. NVIDIA GPUs are essentially miniature supercomputers - they can have upwards of 10,000 cuda-cores, which serve to parallelize the massive computational demands of training a deep learning algorithm. When researchers figured out how to train a neural network on a GPU, train time went from months to days, and the deep learning explosion of 2012 occurred when a GPU-trained neural network won the ImageNet challenge.
+This is where your machine learning and deep learning code will be trained and run. NVIDIA GPUs are essentially miniature supercomputers - they can have upwards of 3,000 cuda-cores, which serve to parallelize the massive computational demands of training a deep learning algorithm. When researchers figured out how to train a neural network on a GPU, train time went from months to days, and the deep learning explosion of 2012 occurred when a GPU-trained neural network won the ImageNet challenge.
 
 ------
 
 # 2. Working with Linux and Unix-based operating systems
 
-Linux is an amazing operating system that makes so many things easier for developers than Windows or Mac. Mac has a Unix kernel (Linux is Linus Pauling’s operating system built around a unix kernel) so it is still useful for development, but doesn’t have the stream-line workflow of Linux. Ubuntu is the most popular linux OS, its free, and I highly recommend it, as it is very user friendly. Also, Linux OS are free (minus Redhat’s enterprise distribution), and linux machines are cheaper than Windows and Mac. The catch is there’s a learning curve to working with Linux, but once you’re past it you’ll love linux. I tolerate my Mac only because it has a Unix kernel.
+Linux is an amazing operating system that makes so many things easier for developers than Windows or Mac. Mac has a Unix kernel (Linux is Linus Pauling’s operating system built around a unix kernel) so it is still useful for development, but doesn’t have the stream-line workflow of Linux. Ubuntu is the most popular linux OS, its free, and I highly recommend it, as it is very user friendly. Also, Linux OS are free (minus Redhat’s enterprise distribution), and linux machines are cheaper than Windows and Mac. The catch is there’s a learning curve to working with Linux, but once you’re past it you’ll love Linux. I tolerate my Mac only because it has a Unix kernel.
 
-Get acquainted with StackOverflow, as it’ll be your best friend when debugging why things aren’t working. If anything throws an error, either while installing a program or running one, just paste the error into google and look for the stack overflow post - I bet you someone has previously had the same issue.
+Get acquainted with [StackOverflow](http://stackoverflow.com/), as it’ll be your best friend when debugging why things aren’t working. If anything throws an error, either while installing a program or running one, just paste the error into Google and look for the stack overflow post - I bet you someone has previously had the same issue.
 
 Learn to use apt-get to install packages. Read up on package repositories and how installation works. Learn about makefiles and make, as you might be compiling your own code.
 
@@ -61,7 +63,7 @@ Learn to use apt-get to install packages. Read up on package repositories and ho
 
 Become familiar with navigating the filesystem: from moving around directories, to creating them, etc.
 
-```bash
+```
 cd    # change directory
 ls    # list what’s in a directory
 mv    # rename or move a file
@@ -113,7 +115,7 @@ Of particular usefulness I think are: `grep`, `sed`, `find`, and `py`.
 
 # 4. Text Editors
 
-You’ll be doing a lot of text-file editing - everything from writing source code to blogs ( 😃 ) includes text files. Notable editors are vim, emacs, nano, and sublime. Vim, emacs, and nano are all command-line editors that open up directly in the terminal:
+You’ll be doing a lot of text-file editing - everything from writing source code to blogs ( 😃 ) includes text files. Notable editors are [vim](http://www.vim.org/), [emacs](https://www.gnu.org/software/emacs/), and [sublime](https://www.sublimetext.com/). Vim and emacs are command-line editors that open up directly in the terminal:
 
 <center>
 <img src="/assets/vim.jpg" width="50%"><br>
@@ -132,7 +134,7 @@ sublime text editor
 
 Which you choose is largely a question of personal taste. Personally I
 find vim to be the best one, as I find that the keyboard shortcuts it
-uses are more intuitive and easier to navigate than nano or emacs, and
+uses are more intuitive and easier to navigate than emacs, and
 the fact that you don’t need the mouse at all makes it superior to
 sublime. Additionally, the convenience of navigating the filesystem and
 opening up text files all from a terminal makes it easier to use than
@@ -152,23 +154,24 @@ Here are a couple vim tutorials to consider (there is a learning curve):
 
 # 5. Programming Languages for machine learning research
 
-<strong>Python</strong>
-Python is the most popular language for machine learning and AI research. It has a number of valuable modules for numerical operations, including numpy (Numerical Python), and scipy (Scientific Python) that allow you to work very efficiently with large matrices. You can usually do in a single line of python what would otherwise require a long function in other languages. I’m a fan of the anaconda distribution of python, as it includes almost everything you’d need.
+<strong>[Python](https://www.python.org/)</strong>.
+This is the most popular language for machine learning and AI research. It has a number of valuable modules for numerical operations, including numpy (Numerical Python), and scipy (Scientific Python) that allow you to work very efficiently with large matrices. You can usually do in a single line of python what would otherwise require a long function in other languages. I’m a fan of the [anaconda](https://www.continuum.io/downloads) distribution of python, as it includes almost everything you’d need.
 
 
-<strong>MATLAB</strong>
-MATLAB is a decent language to use for rapid prototyping and analysis. It has many useful built-in packages for numerical processing. The downside is that MATLAB isn’t a real programming language, its very memory intensive, and you have to pay for it (though academic / student licenses are pretty cheap).
+<strong>[MATLAB](http://www.mathworks.com/products/matlab/?requestedDomain=www.mathworks.com)</strong>.
+Though bulky, MATLAB is a decent language to use for rapid prototyping and analysis. It has many useful built-in packages for numerical processing. The downside is that MATLAB isn’t a real programming language, its very memory intensive, and you have to pay for it (though academic / student licenses are pretty cheap).
 
 
-<strong>C++</strong>
-C++ is widely used in industry for production code. Its very efficient and flexible, and great for large-scale systems. Python packages like numpy often create (under the hood) bindings for fast C++ functions. While C++ is a bit cumbersome for the rapid and hacky prototyping of research, its great for translating that code to enterprise-grade quality.
+<strong>[C++](https://en.wikipedia.org/wiki/C%2B%2B)</strong>.
+Widely used in industry for production code, C++ is very efficient and flexible, and great for large-scale systems. Python packages like numpy often create (under the hood) bindings for fast C++ functions. While C++ is a bit cumbersome for the rapid and hacky prototyping of research, its great for translating that code to enterprise-grade quality.
 
 
-<strong>Bash Scripting</strong>
-Bash scripting is useful for running complex instructions with your filesystem. Learn to use this as it can save you a lot time manipulating files/folders/etc.
+<strong>[Bash
+Scripting](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)</strong>.
+Learn to use this as it can save you a lot time manipulating files/folders/etc. Bash scripting is useful for running complex instructions with your filesystem.
 
 
-<strong>HTML</strong>
+<strong>[HTML](http://www.w3schools.com/html/html_intro.asp)</strong>.
 In my opinion, every good AI researcher, back-end developer, and algorithms specialist should learn at least a bit of HTML. In AI research we often use crowdsourcing tools like Amazon Mechanical Turk to parse our datasets, and you have to build web GUIs for this.
 
 ------
@@ -225,13 +228,15 @@ statements look like:
 and in python 3
 `python(‘Hello World!’)`
 
-<strong>Deep Learning Frameworks</strong>.<br>
+<strong>Flask</strong>.
+When it comes to web dev and HTML, its hard to beat flask. Its a python
+micro-framework for web development that includes wrappers around SQL
+databases. Its super easy to set up and work with. I’ve used it for
+Amazon Mechanical Turk setups, for web interfaces to test algorithms
+against medical practitioners, and to deploy object recognition models
+on web sites.
 
- * [Tensorflow (Google)](http://www.tensorflow.org)
- * [Torch (Facebook)](http://www.torch.ch)
- * [Neon (Nirvana)](https://github.com/NervanaSystems/neon)
- * [Caffe (UC Berkeley)](http://caffe.berkeleyvision.org/)
-
+<strong>Deep Learning Frameworks</strong>.
 There are many good machine learning and deep learning
 frameworks. I’ve worked closely both with Caffe and Tensorflow. Each
 has their pros and cons. Tensorflow - released
@@ -246,13 +251,10 @@ environments in the cloud. Its written in python, and I expect it to
 have the best support - both from Google and the developer community -
 moving forth.
 
-<strong>Flask</strong>.
-When it comes to web dev and HTML, its hard to beat flask. Its a python
-micro-framework for web development that includes wrappers around SQL
-databases. Its super easy to set up and work with. I’ve used it for
-Amazon Mechanical Turk setups, for web interfaces to test algorithms
-against medical practitioners, and to deploy object recognition models
-on web sites.
+ * [Tensorflow (Google)](http://www.tensorflow.org)
+ * [Torch (Facebook)](http://www.torch.ch)
+ * [Neon (Nirvana)](https://github.com/NervanaSystems/neon)
+ * [Caffe (UC Berkeley)](http://caffe.berkeleyvision.org/)
 
 ------
 
@@ -288,16 +290,23 @@ including homework assignments.
 
  ------
 
- # 9. Further resources
+# 9. Further resources
 
- <strong>Prominent Researchers and Research Groups</strong>
+ <strong>Computer Vision Conferences</strong>
 
-This list is by no means exhaustive - I am happy to add folks in here
-if anyone has requests - this simply serves for me as a 'watch list'
-where I look for new and interesting papers.
+ * Computer Vision and Pattern
+ Recognition ([CVPR](http://cvpr2016.thecvf.com/))
+ * European Conference on Computer Vision
+ ([ECCV](http://www.eccv2016.org/))
+ * International Conference on Computer Vision
+ ([ICCV](http://pamitc.org/iccv15/))
 
- Yann Lecun
- Geoff Hinton
- Yoshua Bengio
+ <strong>Machine Learning and General AI Conferences</strong>
 
+ * International Conference on Machine Learning
+ ([ICML](http://icml.cc/2016/))
+ * Neural Information Processing Systems ([NIPS](https://nips.cc/))
+ * Association for the Advancement of Artificial Intelligence
+ ([AAAI](http://www.aaai.org/home.html))
 
+ {% include disqus.html %}

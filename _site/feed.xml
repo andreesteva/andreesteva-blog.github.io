@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Aug 2016 11:14:18 -0700</pubDate>
-    <lastBuildDate>Sun, 07 Aug 2016 11:14:18 -0700</lastBuildDate>
+    <pubDate>Mon, 08 Aug 2016 11:16:50 -0700</pubDate>
+    <lastBuildDate>Mon, 08 Aug 2016 11:16:50 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -24,8 +24,10 @@ essentially went from hardware to software search - which involved many learning
 &lt;p&gt;I’m compiling below a condensed set of basic skills that helped me in my
 transition, in the hope that those of you that are interested in such a
 field switch might find it useful. This is very much a work in progress
-and I welcome all comments and helpful suggestions! I would love to
-continue to evolve this post depending on people’s questions.&lt;/p&gt;
+and I welcome all comments and helpful suggestions! This post is
+tailored slightly towards those interested in machine learning and
+artificial intelligence, but may be useful for those thinking to other
+areas of CS.&lt;/p&gt;
 
 &lt;h1 id=&quot;general-topics&quot;&gt;General Topics:&lt;/h1&gt;
 
@@ -48,18 +50,18 @@ continue to evolve this post depending on people’s questions.&lt;/p&gt;
 If you’re a researcher you’ll need a solid linux box complete with at least one machine-learning grade NVIDIA-GPU. I recommend System76 - their desktops are custom built, high-quality, and relatively cheap compared to larger companies. I use the Leopard Workstation. The Silverback Workstation is great too.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Laptops&lt;/strong&gt;.
-Here, I actually recommend a MacBook Pro. While most of your develop and research will be on the desktop, its great to be able to ssh in remotely (ssh == secure shell: it lets you remotely enter a computer or server to get work done) and go work from the beach. Additionally, having a Mac is useful if you ever decide to build iOS apps.&lt;/p&gt;
+Use a MacBook Pro or a Linux laptop. Avoid Windows at all costs. While most of your develop and research will be on the desktop, its great to be able to ssh in remotely (ssh == secure shell: it lets you remotely enter a computer or server to get work done) and go work from the beach. Additionally, having a Mac is useful if you ever decide to build iOS apps.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GPUs&lt;/strong&gt;.
-This is where your machine learning and deep learning code will be trained and run. NVIDIA GPUs are essentially miniature supercomputers - they can have upwards of 10,000 cuda-cores, which serve to parallelize the massive computational demands of training a deep learning algorithm. When researchers figured out how to train a neural network on a GPU, train time went from months to days, and the deep learning explosion of 2012 occurred when a GPU-trained neural network won the ImageNet challenge.&lt;/p&gt;
+This is where your machine learning and deep learning code will be trained and run. NVIDIA GPUs are essentially miniature supercomputers - they can have upwards of 3,000 cuda-cores, which serve to parallelize the massive computational demands of training a deep learning algorithm. When researchers figured out how to train a neural network on a GPU, train time went from months to days, and the deep learning explosion of 2012 occurred when a GPU-trained neural network won the ImageNet challenge.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;working-with-linux-and-unix-based-operating-systems&quot;&gt;2. Working with Linux and Unix-based operating systems&lt;/h1&gt;
 
-&lt;p&gt;Linux is an amazing operating system that makes so many things easier for developers than Windows or Mac. Mac has a Unix kernel (Linux is Linus Pauling’s operating system built around a unix kernel) so it is still useful for development, but doesn’t have the stream-line workflow of Linux. Ubuntu is the most popular linux OS, its free, and I highly recommend it, as it is very user friendly. Also, Linux OS are free (minus Redhat’s enterprise distribution), and linux machines are cheaper than Windows and Mac. The catch is there’s a learning curve to working with Linux, but once you’re past it you’ll love linux. I tolerate my Mac only because it has a Unix kernel.&lt;/p&gt;
+&lt;p&gt;Linux is an amazing operating system that makes so many things easier for developers than Windows or Mac. Mac has a Unix kernel (Linux is Linus Pauling’s operating system built around a unix kernel) so it is still useful for development, but doesn’t have the stream-line workflow of Linux. Ubuntu is the most popular linux OS, its free, and I highly recommend it, as it is very user friendly. Also, Linux OS are free (minus Redhat’s enterprise distribution), and linux machines are cheaper than Windows and Mac. The catch is there’s a learning curve to working with Linux, but once you’re past it you’ll love Linux. I tolerate my Mac only because it has a Unix kernel.&lt;/p&gt;
 
-&lt;p&gt;Get acquainted with StackOverflow, as it’ll be your best friend when debugging why things aren’t working. If anything throws an error, either while installing a program or running one, just paste the error into google and look for the stack overflow post - I bet you someone has previously had the same issue.&lt;/p&gt;
+&lt;p&gt;Get acquainted with &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;StackOverflow&lt;/a&gt;, as it’ll be your best friend when debugging why things aren’t working. If anything throws an error, either while installing a program or running one, just paste the error into Google and look for the stack overflow post - I bet you someone has previously had the same issue.&lt;/p&gt;
 
 &lt;p&gt;Learn to use apt-get to install packages. Read up on package repositories and how installation works. Learn about makefiles and make, as you might be compiling your own code.&lt;/p&gt;
 
@@ -69,11 +71,11 @@ This is where your machine learning and deep learning code will be trained and r
 
 &lt;p&gt;Become familiar with navigating the filesystem: from moving around directories, to creating them, etc.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# change directory&lt;/span&gt;
-ls    &lt;span class=&quot;c&quot;&gt;# list what’s in a directory&lt;/span&gt;
-mv    &lt;span class=&quot;c&quot;&gt;# rename or move a file&lt;/span&gt;
-cp    &lt;span class=&quot;c&quot;&gt;# copy a file&lt;/span&gt;
-man   &lt;span class=&quot;c&quot;&gt;# show the manual for a command&lt;/span&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd    # change directory
+ls    # list what’s in a directory
+mv    # rename or move a file
+cp    # copy a file
+man   # show the manual for a command
 ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -122,7 +124,7 @@ man   &lt;span class=&quot;c&quot;&gt;# show the manual for a command&lt;/span&g
 
 &lt;h1 id=&quot;text-editors&quot;&gt;4. Text Editors&lt;/h1&gt;
 
-&lt;p&gt;You’ll be doing a lot of text-file editing - everything from writing source code to blogs ( 😃 ) includes text files. Notable editors are vim, emacs, nano, and sublime. Vim, emacs, and nano are all command-line editors that open up directly in the terminal:&lt;/p&gt;
+&lt;p&gt;You’ll be doing a lot of text-file editing - everything from writing source code to blogs ( 😃 ) includes text files. Notable editors are &lt;a href=&quot;http://www.vim.org/&quot;&gt;vim&lt;/a&gt;, &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;emacs&lt;/a&gt;, and &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;sublime&lt;/a&gt;. Vim and emacs are command-line editors that open up directly in the terminal:&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/assets/vim.jpg&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
@@ -141,7 +143,7 @@ sublime text editor
 
 &lt;p&gt;Which you choose is largely a question of personal taste. Personally I
 find vim to be the best one, as I find that the keyboard shortcuts it
-uses are more intuitive and easier to navigate than nano or emacs, and
+uses are more intuitive and easier to navigate than emacs, and
 the fact that you don’t need the mouse at all makes it superior to
 sublime. Additionally, the convenience of navigating the filesystem and
 opening up text files all from a terminal makes it easier to use than
@@ -161,19 +163,20 @@ It has a plethora of wonderful plugins that make it simpler to navigate.&lt;/p&g
 
 &lt;h1 id=&quot;programming-languages-for-machine-learning-research&quot;&gt;5. Programming Languages for machine learning research&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;
-Python is the most popular language for machine learning and AI research. It has a number of valuable modules for numerical operations, including numpy (Numerical Python), and scipy (Scientific Python) that allow you to work very efficiently with large matrices. You can usually do in a single line of python what would otherwise require a long function in other languages. I’m a fan of the anaconda distribution of python, as it includes almost everything you’d need.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt;&lt;/strong&gt;.
+This is the most popular language for machine learning and AI research. It has a number of valuable modules for numerical operations, including numpy (Numerical Python), and scipy (Scientific Python) that allow you to work very efficiently with large matrices. You can usually do in a single line of python what would otherwise require a long function in other languages. I’m a fan of the &lt;a href=&quot;https://www.continuum.io/downloads&quot;&gt;anaconda&lt;/a&gt; distribution of python, as it includes almost everything you’d need.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;MATLAB&lt;/strong&gt;
-MATLAB is a decent language to use for rapid prototyping and analysis. It has many useful built-in packages for numerical processing. The downside is that MATLAB isn’t a real programming language, its very memory intensive, and you have to pay for it (though academic / student licenses are pretty cheap).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.mathworks.com/products/matlab/?requestedDomain=www.mathworks.com&quot;&gt;MATLAB&lt;/a&gt;&lt;/strong&gt;.
+Though bulky, MATLAB is a decent language to use for rapid prototyping and analysis. It has many useful built-in packages for numerical processing. The downside is that MATLAB isn’t a real programming language, its very memory intensive, and you have to pay for it (though academic / student licenses are pretty cheap).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;C++&lt;/strong&gt;
-C++ is widely used in industry for production code. Its very efficient and flexible, and great for large-scale systems. Python packages like numpy often create (under the hood) bindings for fast C++ functions. While C++ is a bit cumbersome for the rapid and hacky prototyping of research, its great for translating that code to enterprise-grade quality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/C%2B%2B&quot;&gt;C++&lt;/a&gt;&lt;/strong&gt;.
+Widely used in industry for production code, C++ is very efficient and flexible, and great for large-scale systems. Python packages like numpy often create (under the hood) bindings for fast C++ functions. While C++ is a bit cumbersome for the rapid and hacky prototyping of research, its great for translating that code to enterprise-grade quality.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Bash Scripting&lt;/strong&gt;
-Bash scripting is useful for running complex instructions with your filesystem. Learn to use this as it can save you a lot time manipulating files/folders/etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html&quot;&gt;Bash
+Scripting&lt;/a&gt;&lt;/strong&gt;.
+Learn to use this as it can save you a lot time manipulating files/folders/etc. Bash scripting is useful for running complex instructions with your filesystem.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.w3schools.com/html/html_intro.asp&quot;&gt;HTML&lt;/a&gt;&lt;/strong&gt;.
 In my opinion, every good AI researcher, back-end developer, and algorithms specialist should learn at least a bit of HTML. In AI research we often use crowdsourcing tools like Amazon Mechanical Turk to parse our datasets, and you have to build web GUIs for this.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -230,16 +233,16 @@ statements look like:
 and in python 3
 &lt;code class=&quot;highlighter-rouge&quot;&gt;python(‘Hello World!’)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Deep Learning Frameworks&lt;/strong&gt;.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Flask&lt;/strong&gt;.
+When it comes to web dev and HTML, its hard to beat flask. Its a python
+micro-framework for web development that includes wrappers around SQL
+databases. Its super easy to set up and work with. I’ve used it for
+Amazon Mechanical Turk setups, for web interfaces to test algorithms
+against medical practitioners, and to deploy object recognition models
+on web sites.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.tensorflow.org&quot;&gt;Tensorflow (Google)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.torch.ch&quot;&gt;Torch (Facebook)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/NervanaSystems/neon&quot;&gt;Neon (Nirvana)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe (UC Berkeley)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are many good machine learning and deep learning
+&lt;p&gt;&lt;strong&gt;Deep Learning Frameworks&lt;/strong&gt;.
+There are many good machine learning and deep learning
 frameworks. I’ve worked closely both with Caffe and Tensorflow. Each
 has their pros and cons. Tensorflow - released
 earlier this year - is my personal favorite. Its a very flexible
@@ -253,13 +256,12 @@ environments in the cloud. Its written in python, and I expect it to
 have the best support - both from Google and the developer community -
 moving forth.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Flask&lt;/strong&gt;.
-When it comes to web dev and HTML, its hard to beat flask. Its a python
-micro-framework for web development that includes wrappers around SQL
-databases. Its super easy to set up and work with. I’ve used it for
-Amazon Mechanical Turk setups, for web interfaces to test algorithms
-against medical practitioners, and to deploy object recognition models
-on web sites.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tensorflow.org&quot;&gt;Tensorflow (Google)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.torch.ch&quot;&gt;Torch (Facebook)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NervanaSystems/neon&quot;&gt;Neon (Nirvana)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe (UC Berkeley)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -299,17 +301,50 @@ including homework assignments.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;# 9. Further resources&lt;/p&gt;
+&lt;h1 id=&quot;further-resources&quot;&gt;9. Further resources&lt;/h1&gt;
 
-&lt;p&gt;&lt;strong&gt;Prominent Researchers and Research Groups&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Computer Vision Conferences&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This list is by no means exhaustive - I am happy to add folks in here
-if anyone has requests - this simply serves for me as a ‘watch list’
-where I look for new and interesting papers.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Computer Vision and Pattern
+ Recognition (&lt;a href=&quot;http://cvpr2016.thecvf.com/&quot;&gt;CVPR&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;European Conference on Computer Vision
+ (&lt;a href=&quot;http://www.eccv2016.org/&quot;&gt;ECCV&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;International Conference on Computer Vision
+ (&lt;a href=&quot;http://pamitc.org/iccv15/&quot;&gt;ICCV&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Yann Lecun
- Geoff Hinton
- Yoshua Bengio&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Machine Learning and General AI Conferences&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;International Conference on Machine Learning
+ (&lt;a href=&quot;http://icml.cc/2016/&quot;&gt;ICML&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Neural Information Processing Systems (&lt;a href=&quot;https://nips.cc/&quot;&gt;NIPS&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Association for the Advancement of Artificial Intelligence
+ (&lt;a href=&quot;http://www.aaai.org/home.html&quot;&gt;AAAI&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page&#39;s canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page&#39;s unique identifier variable
+};
+*/
+(function() { // DON&#39;T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement(&#39;script&#39;);
+    s.src = &#39;//andreesteva-github-io.disqus.com/embed.js&#39;;
+    s.setAttribute(&#39;data-timestamp&#39;, +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
 
 </description>
         <pubDate>Fri, 05 Aug 2016 00:00:00 -0700</pubDate>
